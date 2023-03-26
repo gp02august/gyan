@@ -11,30 +11,28 @@
  */
 class Solution {
 public:
-    pair<int,int>isBalanceFast(TreeNode* root)
+    int height(TreeNode* root)
     {
         if(root==NULL)
-        {
-            pair<bool,int> p=make_pair(true, 0);
-            return p;
-        }
-        pair<int,int>left=isBalanceFast(root->left);
-        pair<int,int>right=isBalanceFast(root->right);
-        bool leftans=left.first;
-        bool rightans=right.first;
-        bool diff=abs(left.second-right.second)<=1;
-        pair<bool, int>ans;
-        ans.second=max(left.second, right.second)+1;
-        if(leftans && rightans && diff)
-        {
-            ans.first=1;
-        }
-        else{
-            ans.first=0;
-        }
+            return NULL;
+        int left = height(root->left);
+        int right = height(root->right);
+        int ans = max(left,right)+1;
         return ans;
     }
     bool isBalanced(TreeNode* root) {
-        return isBalanceFast(root).first;
+        if(root==NULL)
+            return true;
+        int left=isBalanced(root->left);
+        int right=isBalanced(root->right);
+        int k= abs(height(root->left)-height(root->right));
+            if(left && right && (k<=1))
+            {
+                return true;
+            }
+        else{
+            return false;
+        }
+        return false;
     }
 };
