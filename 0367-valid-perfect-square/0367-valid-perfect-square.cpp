@@ -5,7 +5,7 @@ public:
             return true;
         int start =0;
         int end=num;
-        long long int mid = start+(end-start)/2;
+        long  int mid = start+(end-start)/2;
         while(start<=end)
         {
             if(mid*mid == num)
