@@ -1,7 +1,7 @@
 class Solution {
 public:
     bool isPerfectSquare(int num) {
-        if(num==1 || num==4)
+        if(num==0 || num==4)
             return true;
         int start =0;
         int end=num;
