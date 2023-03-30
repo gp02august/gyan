@@ -16,7 +16,7 @@ public:
         if(root==NULL)
             return ans;
         queue<pair<TreeNode* , int> >q;
-        q.push({root, 0});
+        q.push(make_pair(root,0));
         while(!q.empty())
         {
             int n= q.size();
