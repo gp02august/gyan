@@ -21,3 +21,8 @@ return false;
 }
 void dfs(int i, int j, int row, int col, vector<vector<int>>& grid)
 {
+grid[i][j]=0;
+int ax[4] = {1, -1, 0, 0};
+int ay[4] = {0, 0, 1, -1};
+for(int k=0; k<4; k++)
+{
