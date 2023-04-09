@@ -24,9 +24,16 @@ public:
                 pred->right=temp->right;
                 temp->right = temp->left;
                 
-                temp->left= NULL;
+                 //temp->left= NULL;
             }
               temp=temp->right;
+        }
+          
+        temp=root;
+        while(temp != NULL)
+        {
+            temp->left= NULL;
+            temp= temp->right;
         }
     }
 };
