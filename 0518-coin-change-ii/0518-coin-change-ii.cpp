@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int dp [3001][5001];
+    int dp [301][5001];
     int solve(int indx, vector<int>&coins, int amt)
     {
         if(indx == coins.size())
