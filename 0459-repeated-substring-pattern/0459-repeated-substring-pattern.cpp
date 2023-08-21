@@ -21,3 +21,5 @@ public:
     return false;
     }
 };
+
+/* time complexity = n*underroot(n); and we can also traverse for(int len =n/2; len>=1; len--) */
