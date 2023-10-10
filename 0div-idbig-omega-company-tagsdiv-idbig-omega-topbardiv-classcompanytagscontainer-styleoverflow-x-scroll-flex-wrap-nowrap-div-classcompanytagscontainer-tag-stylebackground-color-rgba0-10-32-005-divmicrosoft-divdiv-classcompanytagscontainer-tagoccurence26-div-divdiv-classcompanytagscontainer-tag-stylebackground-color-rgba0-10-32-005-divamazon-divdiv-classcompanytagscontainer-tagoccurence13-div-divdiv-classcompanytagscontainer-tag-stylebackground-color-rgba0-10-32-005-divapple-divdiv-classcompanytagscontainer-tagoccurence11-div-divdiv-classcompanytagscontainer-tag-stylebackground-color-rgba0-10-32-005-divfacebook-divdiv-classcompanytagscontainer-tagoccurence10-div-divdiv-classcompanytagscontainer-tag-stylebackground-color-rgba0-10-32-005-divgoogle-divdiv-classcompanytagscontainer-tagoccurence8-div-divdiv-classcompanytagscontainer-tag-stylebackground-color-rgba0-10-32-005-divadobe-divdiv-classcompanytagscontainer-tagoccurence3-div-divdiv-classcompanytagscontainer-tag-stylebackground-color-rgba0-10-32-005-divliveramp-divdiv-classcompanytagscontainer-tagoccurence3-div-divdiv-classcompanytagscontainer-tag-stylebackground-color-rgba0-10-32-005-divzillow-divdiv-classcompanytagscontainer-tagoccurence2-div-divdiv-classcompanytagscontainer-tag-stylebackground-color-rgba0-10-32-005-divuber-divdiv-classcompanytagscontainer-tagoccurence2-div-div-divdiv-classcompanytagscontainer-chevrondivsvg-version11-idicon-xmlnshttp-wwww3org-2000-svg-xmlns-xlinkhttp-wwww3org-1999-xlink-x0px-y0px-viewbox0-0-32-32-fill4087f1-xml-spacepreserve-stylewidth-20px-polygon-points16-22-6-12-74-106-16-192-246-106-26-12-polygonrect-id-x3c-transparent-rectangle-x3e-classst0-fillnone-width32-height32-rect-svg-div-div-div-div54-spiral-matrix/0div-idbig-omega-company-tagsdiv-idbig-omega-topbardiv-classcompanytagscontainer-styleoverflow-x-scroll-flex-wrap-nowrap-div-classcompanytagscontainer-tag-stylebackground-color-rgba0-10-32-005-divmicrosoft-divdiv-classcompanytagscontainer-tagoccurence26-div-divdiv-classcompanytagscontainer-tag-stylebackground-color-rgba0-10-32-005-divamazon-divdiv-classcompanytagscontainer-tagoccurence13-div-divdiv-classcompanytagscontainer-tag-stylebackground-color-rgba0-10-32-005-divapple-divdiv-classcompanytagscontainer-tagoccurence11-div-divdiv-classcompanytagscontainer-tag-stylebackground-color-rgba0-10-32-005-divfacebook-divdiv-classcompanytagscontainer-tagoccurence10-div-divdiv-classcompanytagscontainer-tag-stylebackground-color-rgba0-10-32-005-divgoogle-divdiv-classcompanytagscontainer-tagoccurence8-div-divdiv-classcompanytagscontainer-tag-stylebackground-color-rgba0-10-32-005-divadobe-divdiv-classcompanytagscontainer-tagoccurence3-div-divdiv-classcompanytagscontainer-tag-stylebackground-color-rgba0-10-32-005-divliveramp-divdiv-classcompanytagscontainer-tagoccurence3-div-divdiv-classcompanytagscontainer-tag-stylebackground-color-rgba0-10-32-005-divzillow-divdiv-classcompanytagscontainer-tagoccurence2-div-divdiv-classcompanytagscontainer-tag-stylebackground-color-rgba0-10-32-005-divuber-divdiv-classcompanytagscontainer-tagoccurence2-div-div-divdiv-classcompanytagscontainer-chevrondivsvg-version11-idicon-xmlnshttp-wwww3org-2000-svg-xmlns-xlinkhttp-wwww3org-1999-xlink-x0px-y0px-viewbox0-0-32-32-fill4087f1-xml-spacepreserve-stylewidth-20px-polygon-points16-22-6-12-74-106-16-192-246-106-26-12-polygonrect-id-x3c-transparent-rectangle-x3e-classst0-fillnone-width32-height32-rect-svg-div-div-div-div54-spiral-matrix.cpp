@@ -10,28 +10,37 @@ public:
         {
             if(direction==0)
             {
-                for(int i=left;i<=right;i++) v.push_back(matrix[top][i]);
+                for(int i=left;i<=right;i++) 
+                {
+                    v.push_back(matrix[top][i]);
+                }
                 top++;
             }
             
             else if(direction==1)
             {
-                for(int i=top;i<=bottom;i++) v.push_back(matrix[i][right]);
-               
+                for(int i=top;i<=bottom;i++)
+                {
+                    v.push_back(matrix[i][right]);
+                }
                 right--;
             }
             
             else if(direction==2)
             {
-                for(int i=right;i>=left;i--) v.push_back(matrix[bottom][i]);
-               
+                for(int i=right;i>=left;i--)
+                {
+                    v.push_back(matrix[bottom][i]);
+                }
                 bottom--;
             }
             
             else if(direction==3)
             {
-                for(int i=bottom;i>=top;i--) v.push_back(matrix[i][left]);
-               
+                for(int i=bottom;i>=top;i--)
+                {
+                    v.push_back(matrix[i][left]);
+                }
                 left++;
             }
             direction = (direction + 1)%4;
