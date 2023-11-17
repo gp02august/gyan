@@ -15,3 +15,4 @@ public:
         return result;
     }
 };
+//using two pointers approach.
