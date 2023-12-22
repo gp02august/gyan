@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int t[1001][1001];
+    int t[1001][1001];  // this is done with memoization approach.
     int solve(string& text1, string& text2, int n, int m)
     {
         if(n == 0 || m == 0)
