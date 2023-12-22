@@ -22,10 +22,11 @@ public:
         
         i++;
         if(i==k)
-            return root->val;;
+            return root->val;
         
         return inorder(root->right, i, k);
     }
+    
     int kthSmallest(TreeNode* root, int k) {
         int i=0;
         int ans = inorder(root, i, k);
