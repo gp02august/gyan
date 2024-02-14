@@ -29,12 +29,12 @@ public:
             j++;
             k++;
         }
-        while(j<v1.size())
+        while(j<v1.size())  // when positive integers remain then we do
         {
             res.push_back(v1[j]);
             j++;
         }
-        while(k<v2.size())
+        while(k<v2.size())  // similarly when negative elements remain then we do
         {
             res.push_back(v2[k]);
             k++;
