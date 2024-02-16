@@ -35,7 +35,7 @@ public:
         int sum = 0;
         int remainingUnique = 0;
         
-        for (size_t i = 0; i < freq.size(); ++i) {
+        for (int i = 0; i < freq.size(); ++i) {
             sum += freq[i];
             
             if (sum > k) {
