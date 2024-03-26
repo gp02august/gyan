@@ -5,7 +5,8 @@ public:
         int n = nums.size();
         for(auto i:nums)
         {
-            s.insert(i);
+            if(i>0)
+              s.insert(i);
         }
         for(int i=1; i<=n+1; i++)
         {
