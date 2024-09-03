@@ -29,13 +29,6 @@ public:
         mp['y']=25;
         mp['z']=26;
         
-//         unordered_map<char, int> mp;
-
-//         // Initialize the map with the positions of each alphabet character
-//         for (char ch = 'a'; ch <= 'z'; ++ch) {
-//             mp[ch] = ch - 'a' + 1;
-//         }
-
         string res;
         int sum = 0;
 
